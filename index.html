@@ -6,6 +6,9 @@
   <title>AURA | Bespoke Luxury Travel & Journeys</title>
   <meta name="description" content="Discover world-class destinations, handpicked private villas, and bespoke luxury travel experiences tailored for discerning travelers.">
   
+  <!-- Google Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1282,6 +1285,15 @@
       padding: 0;
       background: #000;
       overflow: hidden;
+      border: none !important;
+      border-bottom: none !important;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+    }
+    .video-modal-card iframe, .video-modal-card video {
+      border: none !important;
+      outline: none !important;
+      border-bottom: none !important;
+      box-shadow: none !important;
     }
 
     /* Responsive Adjustments */
@@ -2290,8 +2302,8 @@
     }
 
     function openVideoModal() {
-      // Cinematic Travel YouTube embed
-      id('videoIframe').src = "https://www.youtube-nocookie.com/embed/PjE40_6-RmA?autoplay=1";
+      // Working YouTube Luxury Travel Trailer with controls=0 (No pause/controls bar)
+      id('videoIframe').src = "https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1&controls=0&modestbranding=1&rel=0&disablekb=1&fs=0&loop=1&playlist=ScMzIvxBSi4";
       id('videoModal').classList.add('active');
     }
 
